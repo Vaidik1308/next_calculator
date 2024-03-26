@@ -18,4 +18,4 @@ export const KEY_VALUES = [
     "0",
     "00",
     ".",
-]
+] 

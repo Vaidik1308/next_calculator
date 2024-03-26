@@ -1,6 +1,7 @@
 import React from 'react'
 import SingleButton from './SingleButton'
 import { KEY_VALUES } from '@/libs/constants'
+import { KeyType } from '../../../types'
 
 type Props = {}
 
@@ -11,7 +12,7 @@ const Buttons = (props: Props) => {
             KEY_VALUES.map((value,index) => (
                 <SingleButton
                     key={index}
-                    value={value}
+                    value={value as KeyType}
                 />
             ))
         }
