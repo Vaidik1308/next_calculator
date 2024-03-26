@@ -2,8 +2,6 @@
 import { useCalculatorContext } from '@/context';
 import React from 'react'
 
-import { Textfit } from "react-textfit";
-
 type Props = {}
 
 const Display = (props: Props) => {
