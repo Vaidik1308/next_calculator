@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -98,4 +100,9 @@
     background-color: #1e0425;
     border-radius: 3px;
     border: 3px solid #ffffff;
+  }
+  body{
+
+    background: rgb(47,74,158);
+    background: linear-gradient(90deg, rgba(47,74,158,1) 4%, rgba(45,61,143,1) 14%, rgba(39,5,89,1) 51%, rgba(34,7,71,1) 76%) !important;
   }
