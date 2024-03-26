@@ -1,6 +1,6 @@
 import React from 'react'
 import SingleButton from './SingleButton'
-import { KEY_VALUES } from '@/libs/constants'
+import { KEY_VALUES } from '@/lib/constants'
 import { KeyType } from '../../../types'
 
 type Props = {}

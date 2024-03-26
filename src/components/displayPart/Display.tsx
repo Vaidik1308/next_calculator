@@ -8,8 +8,8 @@ const Display = (props: Props) => {
   const { value, expression } = useCalculatorContext();
 
   return (
-    <div className=" flex flex-col items-end justify-center  w-full h-24  rounded-xl mb-1 p-2 ">
-      <span className="text-xl text-right mb-1 opacity-60">
+    <div className=" flex flex-col items-end justify-center  w-full h-full  rounded-xl mb-1 p-2 ">
+      <span className="text-xl text-right mb-1 opacity-60 break-words w-full">
         {expression}
       </span>
       {/* <Textfit
@@ -21,7 +21,7 @@ const Display = (props: Props) => {
       >
         {value}
       </Textfit> */}
-      <h1 className='text-5xl'>
+      <h1 className='text-5xl break-words w-full text-right'>
         {value}
       </h1>
     </div>

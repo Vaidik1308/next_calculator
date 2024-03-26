@@ -13,11 +13,11 @@ const Navbar = (props: Props) => {
     <>
     
         <div className='w-full flex justify-between px-2 mt-2'>
-            <div className='flex gap-2 items-center w-fit'>
+            <div className='flex gap-2 items-center w-fit text-2xl'>
                 <Sidebar/>
-                <span>Standard</span>
+                <span className=''>Standard</span>
             </div>
-            <div>
+            <div className='text-2xl mt-1'>
                 <CiTimer/>
             </div>
         </div>
