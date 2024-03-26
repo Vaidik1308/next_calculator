@@ -37,6 +37,7 @@ const CalculatorContextProvider: FC<ICalculatorProviderProps> = ({ children }) =
       case "-":
       case "x":
       case "/":
+      case "%":
         setOperatorWasPressed(true);
         return;
       default:
@@ -103,6 +104,7 @@ const CalculatorContextProvider: FC<ICalculatorProviderProps> = ({ children }) =
       case "-":
       case "x":
       case "/":
+      case "%":
         handleOperatorKeyPress(keyValue);
         return;
       case ".":

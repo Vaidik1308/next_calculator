@@ -17,6 +17,7 @@ const keys = [
     "x",
     "reset",
     "=",
+    "%"
   ] as const;
   
   export type KeyType = typeof keys[number];

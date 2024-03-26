@@ -1,7 +1,7 @@
 'use client'
 import { useCalculatorContext } from '@/context'
 import React from 'react'
-import { FaTimes,FaMinus,FaPlus,FaEquals } from 'react-icons/fa'
+import { FaTimes,FaMinus,FaPlus,FaEquals, FaPercent } from 'react-icons/fa'
 import { FaDeleteLeft, FaDivide } from 'react-icons/fa6'
 import { KeyType } from '../../../types'
 
@@ -26,8 +26,9 @@ const SingleButton = ({value}: KeyProps) => {
             <FaMinus/> : 
               value==='='? 
               <FaEquals/> : 
-                value
-    const operators = ['reset', '+', '-', 'x', '=', '/','del'];
+                value === '%' ?
+                  <FaPercent/> : value
+    const operators = ['reset', '+', '-', 'x', '=', '/','del','%'];
     const isOperator = operators.includes(value);
   
   return (

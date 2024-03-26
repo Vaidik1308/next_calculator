@@ -15,6 +15,8 @@ type Props = {}
 const Sidebar = (props: Props) => {
     const [isOpen,setIsOpen] = useState(false)
     const pathname = usePathname()
+    console.log(5%2);
+    
   return (
     <Sheet >
         <SheetTrigger asChild>

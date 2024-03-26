@@ -1,7 +1,7 @@
 export const KEY_VALUES = [
     "reset",
     "del",
-    "/",
+    "%",
     "x",
     "7",
     "8",
@@ -14,8 +14,9 @@ export const KEY_VALUES = [
     "1",
     "2",
     "3",
-    "=",
+    "/",
     "0",
     "00",
     ".",
+    "=",
 ] 
