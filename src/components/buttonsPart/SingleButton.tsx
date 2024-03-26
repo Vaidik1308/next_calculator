@@ -10,7 +10,6 @@ type KeyProps = {
 }
 
 const SingleButton = ({value}: KeyProps) => {
-  // console.log(value);
   const { handleKeyPress } = useCalculatorContext();
   const symbolsKeyboard = value === 'del' ? 
     <FaDeleteLeft size={20}/>: 

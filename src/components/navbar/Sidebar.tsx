@@ -15,7 +15,6 @@ type Props = {}
 const Sidebar = (props: Props) => {
     const [isOpen,setIsOpen] = useState(false)
     const pathname = usePathname()
-    console.log(5%2);
     
   return (
     <Sheet >
@@ -35,9 +34,9 @@ const Sidebar = (props: Props) => {
             <div className='flex flex-col mt-8'>
 
                 <h2 className='mx-4 font-bold'>Calculators</h2>
-                <div className='w-full flex flex-col gap-4 pl-2'>
+                <div className='w-full flex flex-col gap-4 pl-2 pr-1'>
                     <Link 
-                        className={`w-full flex items-center gap-6 bg-[#3E3F3F] py-2 `} 
+                        className={`w-full flex items-center gap-6 bg-[#3E3F3F] py-4   hover:bg-[#3E3F3F]`} 
                         href={"/"}>
                             <div className={`flex items-center gap-2 mx-2  `}>
                                 <div className='w-[4px] bg-[#FE7533] h-[24px] bg-'/>
@@ -46,16 +45,16 @@ const Sidebar = (props: Props) => {
                             <span>Standard</span>
                     </Link>
                     <Link 
-                        className={`w-full flex items-center gap-6  py-2 `} 
+                        className={`w-full flex items-center gap-6  py-4   hover:bg-[#3E3F3F]`} 
                         href={"/c"}>
                             <div className={`flex items-center gap-2 mx-2  `}>
                                 <div className='w-[4px] bg-[#FE7533] h-[24px] bg-'/>
-                                <MdScience/>
+                                <MdScience size={20}/>
                             </div>
                             <span>Scientific</span>
                     </Link>
                     <Link 
-                        className={`w-full flex items-center gap-6  py-2 `} 
+                        className={`w-full flex items-center gap-6  py-4    hover:bg-[#3E3F3F]`} 
                         href={"/c"}>
                             <div className={`flex items-center gap-2 mx-2  `}>
                                 <div className='w-[4px] bg-[#FE7533] h-[24px] bg-'/>
@@ -68,9 +67,9 @@ const Sidebar = (props: Props) => {
             <div className='flex flex-col mt-8'>
 
                 <h2 className='mx-4 font-bold'>Converter</h2>
-                <div className='w-full flex flex-col gap-4 pl-2'>
+                <div className='w-full flex flex-col gap-4 pl-2 pr-1'>
                     <Link 
-                        className={`w-full flex items-center gap-6  py-2 `} 
+                        className={`w-full flex items-center gap-6  py-4    hover:bg-[#3E3F3F]`} 
                         href={"/"}>
                             <div className={`flex items-center gap-2 mx-2  `}>
                                 <div className='w-[4px] bg-[#FE7533] h-[24px] bg-'/>
@@ -79,7 +78,7 @@ const Sidebar = (props: Props) => {
                             <span>Currency</span>
                     </Link>
                     <Link 
-                        className={`w-full flex items-center gap-6  py-2 `} 
+                        className={`w-full flex items-center gap-6  py-4   hover:bg-[#3E3F3F]`} 
                         href={"/c"}>
                             <div className={`flex items-center gap-2 mx-2  `}>
                                 <div className='w-[4px] bg-[#FE7533] h-[24px] bg-'/>
@@ -88,7 +87,7 @@ const Sidebar = (props: Props) => {
                             <span>Volume</span>
                     </Link>
                     <Link 
-                        className={`w-full flex items-center gap-6  py-2 `} 
+                        className={`w-full flex items-center gap-6  py-4   hover:bg-[#3E3F3F]`} 
                         href={"/c"}>
                             <div className={`flex items-center gap-2 mx-2  `}>
                                 <div className='w-[4px] bg-[#FE7533] h-[24px] bg-'/>
@@ -97,7 +96,7 @@ const Sidebar = (props: Props) => {
                             <span>Length</span>
                     </Link>
                     <Link 
-                        className={`w-full flex items-center gap-6  py-2 `} 
+                        className={`w-full flex items-center gap-6  py-4  hover:bg-[#3E3F3F]`} 
                         href={"/c"}>
                             <div className={`flex items-center gap-2 mx-2  `}>
                                 <div className='w-[4px] bg-[#FE7533] h-[24px] bg-'/>

@@ -8,7 +8,7 @@ const Display = (props: Props) => {
   const { value, expression } = useCalculatorContext();
 
   return (
-    <div className=" flex flex-col items-end justify-center  w-full h-full  rounded-xl mb-1 p-2 ">
+    <div className=" flex flex-col items-end justify-center  w-full h-full overflow-y-auto  rounded-xl mb-1 p-2 ">
       <span className="text-xl text-right mb-1 opacity-60 break-words w-full">
         {expression}
       </span>
