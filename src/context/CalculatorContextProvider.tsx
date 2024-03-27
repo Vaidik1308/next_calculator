@@ -153,7 +153,7 @@ const useCalculatorContext = () => {
 
   if (!context)
     throw new Error(
-      "useCalculatorContext should be used whithin a CalculatorProvider"
+      "useCalculatorContext should be used within a CalculatorProvider"
     );
 
   return context;
